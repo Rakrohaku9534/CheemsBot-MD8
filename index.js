@@ -105,7 +105,7 @@ try{
 		if (update.connection == "connecting" || update.receivedPendingNotifications == "false") {
 			console.log(color(`\n🌿Connecting...`, 'yellow'))
 		}
-		if (update.connection == "open" || update.receivedPendingNotifications == "true") {
+		if (update.connection == "open" || update.receivedPendingNotifications == "false") {
 			await XeonBotInc.sendMessage(owner + "@s.whatsapp.net", { text: `*Bot started!*\n\n\n_Don't forget to support, bro :)_\n\nYouTube: https://youtube.com/@DGXeon\n\nGitHub: https://github.com/DGXeon\n\nInstsgram: https://instagram.com/unicorn_xeon?igshid=MTIzZWQxMDU=\n\nWhatsApp Pm: wa.me/916909137213\n\n WhatsApp Gc1: https://chat.whatsapp.com/Dc2qyVeK8JbJq8Gr3U1pKH\n\nWhatsApp Gc2: https://chat.whatsapp.com/BW0o3ZyiAF5Azb1bIqG9Ue\n\nWhatsApp Gc3: https://chat.whatsapp.com/Dc2qyVeK8JbJq8Gr3U1pKH\n\nDonate: https://i.ibb.co/w46VQ8D/Picsart-22-10-08-06-46-30-674.jpg \n\n\n_*Thanks to*_\n_*Lord Buddha*_\n_*Myself*_\n_*Family*_\n_*Friends who helped me assemble this script*_` });
 			await XeonBotInc.groupAcceptInvite("Dc2qyVeK8JbJq8Gr3U1pKH") //auto join group, if group link is invalid or if bot number is not able to join the group, then it will give error in the startup
 			//await delay(1000 * 2) 
@@ -115,9 +115,9 @@ try{
 			await delay(1999)
             console.log(chalk.yellow(`\n\n               ${chalk.bold.blue(`[ ${botname} ]`)}\n\n`))
             console.log(color(`< ================================================== >`, 'cyan'))
-	        console.log(color(`\n${themeemoji} YT CHANNEL: Xeon`,'magenta'))
-            console.log(color(`${themeemoji} GITHUB: DGXeon `,'magenta'))
-            console.log(color(`${themeemoji} INSTAGRAM: @unicorn_xeon `,'magenta'))
+	        console.log(color(`\n${themeemoji} YT CHANNEL: Fahrul`,'magenta'))
+            console.log(color(`${themeemoji} GITHUB: Rakrohaku `,'magenta'))
+            console.log(color(`${themeemoji} INSTAGRAM: @fahrul_mt`,'magenta'))
             console.log(color(`${themeemoji} WA NUMBER: ${owner}`,'magenta'))
             console.log(color(`${themeemoji} CREDIT: ${wm}\n`,'magenta'))
 		}
@@ -175,7 +175,7 @@ ppgroup = 'https://i.ibb.co/RBx5SQC/avatar-group-large-v2.png?q=60'
 }
 			console.log(json)
 			const res = json[0];
-			if (res.announce == true) {
+			if (res.announce == false) {
 				await sleep(2000)
 				XeonBotInc.sendMessage(res.id, {
 					text: `「 Group Settings Change 」\n\nGroup has been closed by admin, Now only admins can send messages !`,
@@ -185,7 +185,7 @@ ppgroup = 'https://i.ibb.co/RBx5SQC/avatar-group-large-v2.png?q=60'
 				XeonBotInc.sendMessage(res.id, {
 					text: `「 Group Settings Change 」\n\nThe group has been opened by admin, Now participants can send messages !`,
 				});
-			} else if (res.restrict == true) {
+			} else if (res.restrict == false) {
 				await sleep(2000)
 				XeonBotInc.sendMessage(res.id, {
 					text: `「 Group Settings Change 」\n\nGroup info has been restricted, Now only admin can edit group info !`,
@@ -249,8 +249,8 @@ XeonBotInc.sendMessage(anu.id,
  { text: xeonbody,
  contextInfo:{
  mentionedJid:[num],
- "externalAdReply": {"showAdAttribution": true,
- "containsAutoReply": true,
+ "externalAdReply": {"showAdAttribution": false,
+ "containsAutoReply": false,
  "title": ` ${global.botname}`,
 "body": `${ownername}`,
  "previewType": "PHOTO",
@@ -277,8 +277,8 @@ XeonBotInc.sendMessage(anu.id,
  { text: xeonbody,
  contextInfo:{
  mentionedJid:[num],
- "externalAdReply": {"showAdAttribution": true,
- "containsAutoReply": true,
+ "externalAdReply": {"showAdAttribution": false,
+ "containsAutoReply": false,
  "title": ` ${global.botname}`,
 "body": `${ownername}`,
  "previewType": "PHOTO",
@@ -295,8 +295,8 @@ xeonbody = ` 𝗖𝗼𝗻𝗴𝗿𝗮𝘁𝘀🎉 @${xeonName.split("@")[0]}, yo
  { text: xeonbody,
  contextInfo:{
  mentionedJid:[num],
- "externalAdReply": {"showAdAttribution": true,
- "containsAutoReply": true,
+ "externalAdReply": {"showAdAttribution": false,
+ "containsAutoReply": false,
  "title": ` ${global.botname}`,
 "body": `${ownername}`,
  "previewType": "PHOTO",
@@ -313,8 +313,8 @@ XeonBotInc.sendMessage(anu.id,
  { text: xeonbody,
  contextInfo:{
  mentionedJid:[num],
- "externalAdReply": {"showAdAttribution": true,
- "containsAutoReply": true,
+ "externalAdReply": {"showAdAttribution": false,
+ "containsAutoReply": false,
  "title": ` ${global.botname}`,
 "body": `${ownername}`,
  "previewType": "PHOTO",
